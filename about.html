@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✈️ Rajasthan Tourism</title>
+
+    <!-- CSS Default-->
+    <link rel="stylesheet" href="css/aboutstyle.css">
+
+    <!-- CSS Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav Bar-->
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <img src="images/logo.png" class="logo" alt="logo">
+          <span class="navbar-text heading" style="color: white;">RAJASTHAN TOURISM</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link top-button" href="index.html" style="text-align:center">Home</a>
+              <a class="nav-link top-button" href="#" style="text-align:center">About us</a>
+              <a class="nav-link top-button" href="#contact" style="text-align:center">Contact us</a>
+              <a class="nav-link top-button" data-bs-toggle="modal" data-bs-target="#exampleModal-signin" data-bs-whatever="@getbootstrap" style="text-align:center">Sign in</a>
+              <a class="nav-link top-button" data-bs-toggle="modal" data-bs-target="#exampleModal-signup" data-bs-whatever="@getbootstrap" style="text-align:center">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Sign In Tab-->
+    <div class="modal fade" id="exampleModal-signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header booking-titlebox">
+            <h5 class="modal-title signin-title" id="exampleModalLabel">Sign In</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="recipientMailSignin">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Password:</label>
+                <input type="password" class="form-control" id="recipientPasswordSignin">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Close" id="signinButton">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign UP Tab-->
+    <div class="modal fade" id="exampleModal-signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header booking-titlebox">
+            <h5 class="modal-title signin-title" id="exampleModalLabel">Sign Up</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" id="recipientName" autocomplete="off">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="recipientMail">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-pass" class="col-form-label">Password:</label>
+                <input type="password" class="form-control" id="recipientPassword">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-phone" class="col-form-label">Phone no:</label>
+                <input type="tel" class="form-control" id="recipientContact" autocomplete="off">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Close" id="signupButton">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Info -->
+    <section id="about">
+        <div class="row">
+          <div class="col-lg-6 about-col">
+            <img src="images/about.jpg" class="about-img">
+          </div>
+          <div class="col-lg-6 content-col">
+            <p class="about-head">Welcome to Rajasthan Tourism</p>
+            <p class="about-content">Rajasthan Tourism is one of the leading Travel Management companies in Jaipur with its 
+              Registered office at Jaipur, Durgapura. We offer broad range of services which includes 
+              domestic holidays, hotel bookings, car rentals and tour packages. We’re passionate about 
+              Rajasthan tour. Specializing in this specific region for over five years has gained us some 
+              serious expertise in India’s most colourful state. We love the history of Rajasthan, the rich 
+              culture and heritage, and also the iconic luxury hotels; however, we also love engaging with our 
+              destination and helping our guests get off the beaten track, to discover some of Rajasthan’s 
+              truly hidden gems. Rajasthan Tourism is more than your usual Tour & Travels Agency and Travel 
+              Agents in Jaipur. We take the time to get to know you your individual needs, your tastes and 
+              your desires – to create your unique holiday experience. Our highly experienced team have 
+              unrivalled destination knowledge and global contacts to satisfy any whim.</p>
+          </div>
+        </div>
+
+        <p class="heritage-sites">UNESCO WORLD HERITAGE SITES</p>
+
+        <div class="video-box">
+          <iframe class="video" src="https://www.youtube.com/embed/sL-JajgBt-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!--Contact Page-->
+    <section id="contact">
+      <div class="row foot-row">
+          <div class="col-lg-4 foot-column">
+            <img src="images/foot_logo.png" class="foot-img">
+            <p class="foot-font">Our services assure safety, comfort, and reliability to every customer.</p>
+          </div>
+          <div class="col-lg-4 foot-column">
+            <p class="foot-heading">Contact Details:</p>
+            <div class="foot-content">+91-9358394101</div>
+            <div class="foot-content">rizulv.jpr@gmail.com</div><br>
+          </div>
+          <div class="col-lg-4 foot-column">
+            <p class="foot-heading">Office Address:</p>
+            <p class="foot-font">190 - Vishvakarma Nagar 1st, Maharani Farm, Jaipur 302018.</p>
+          </div>
+      </div><br><br>
+      
+      <div class="site-box">
+        <a href="https://www.instagram.com/rizul_vaidya/" target="_blank"><img src="images/instagram.png" class="socialsite-img"></a>
+        <a href="https://wa.me/+919358394101?text=Welcome To Rajasthan Tourism" target="_blank"><img src="images/whatsapp.png" class="socialsite-img"></a>
+        <a href="https://www.facebook.com/rizul.vaidya.9?mibextid=ZbWKwL" target="_blank"><img src="images/facebook.png" class="socialsite-img"></a>
+        <br><br>
+        <hr><br>
+        <p class="copyright">@Copyright 2022 - Design and Developed By Rizul Vaidya</p>
+      </div>
+      
+  </section>
+    <!-- Script Bootstrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- index.js -->
+    <script src="js/index.js" charset="UTF-8"></script>
+</body>
+</html>

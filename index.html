@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✈️ Rajasthan Tourism</title>
+
+    <!-- CSS Default-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav Bar-->
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <img src="images/logo.png" class="logo" alt="logo">
+          <span class="navbar-text heading" style="color: white;">RAJASTHAN TOURISM</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link top-button" href="#" style="text-align:center">Home</a>
+              <a class="nav-link top-button" href="about.html" style="text-align:center">About us</a>
+              <a class="nav-link top-button" href="#contact" style="text-align:center">Contact us</a>
+              <a class="nav-link top-button btn" data-bs-toggle="modal" data-bs-target="#exampleModal-signin" data-bs-whatever="@getbootstrap" style="text-align:center">Sign in</a>
+              <a class="nav-link top-button" data-bs-toggle="modal" data-bs-target="#exampleModal-signup" data-bs-whatever="@getbootstrap" style="text-align:center">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!--Image Carousel-->
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/desert.jpg" class="d-block caraousel-image" alt="desert-image">
+            <div class="carousel-caption">
+              <h5>JAISALMER</h5>
+              <p class="d-none d-md-block">The arid desert of Rajasthan</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/udaipur.jpg" class="d-block caraousel-image" alt="udaipur-image">
+            <div class="carousel-caption">
+              <h5>UDAIPUR</h5>
+              <p class="d-none d-md-block">The city of lakes.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/jaipur.jpg" class="d-block caraousel-image" alt="udaipur-image">
+            <div class="carousel-caption">
+              <h5>JAIPUR</h5>
+              <p class="d-none d-md-block">The pink city.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/ranthambore.jpg" class="d-block caraousel-image" alt="ranthambore-image">
+            <div class="carousel-caption">
+              <h5>RANTHAMBORE</h5>
+              <p class="d-none d-md-block">The land of tigers.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Sign In Tab-->
+    <div class="modal fade" id="exampleModal-signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header booking-titlebox">
+            <h5 class="modal-title signin-title" id="exampleModalLabel">Sign In</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="recipientMailSignin">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Password:</label>
+                <input type="password" class="form-control" id="recipientPasswordSignin">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Close" id="signinButton">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign UP Tab-->
+    <div class="modal fade" id="exampleModal-signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header booking-titlebox">
+            <h5 class="modal-title signin-title" id="exampleModalLabel">Sign Up</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" id="recipientName" autocomplete="off">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="recipientMail">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-pass" class="col-form-label">Password:</label>
+                <input type="password" class="form-control" id="recipientPassword">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-phone" class="col-form-label">Phone no:</label>
+                <input type="tel" class="form-control" id="recipientContact" autocomplete="off">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Close" id="signupButton">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Tour Packages-->
+    <section id="packages">
+      <p class="heading-packages">Tour Packages</p>
+      <div class="row card-group">
+        <div class="col-lg-4 col-md-6 card-box">
+          <img src="images/image_one.jpg" class="card-img-top card-image" alt="Jaipur_image">
+          <div class="card card-body">
+            <h5 class="card-title card-heading" id="tourName1">Jaipur Tour</h5>
+            <p class="card-text day-night">1 Night/2 Days</p>
+            <p class="card-text card-font">Places We Will Cover - Amer fort, Mavtha Lake, Jal Mahal, Hawa Mahal, Nahargarh Fort, Jaigarh Fort, Kanak Garden, City Palace, Jantar Mantar, Albert Hall Museum.</p>
+            <h3 class="tour-button">₹ 6000 / per person</h3><br>
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal-Booking" data-bs-whatever="@getbootstrap" id="BookingBox1">Book Now</button>
+          </div>
+        </div>
+      
+        <div class="col-lg-4 col-md-6 card-box">
+          <img src="images/image_two.jpg" class="card-img-top card-image" alt="Udaipur_image">
+          <div class="card card-body">
+            <h5 class="card-title card-heading" id="tourName2">Udaipur Tour</h5>
+            <p class="card-text day-night">1 Night/2 Days</p>
+            <p class="card-text card-font">Places We Will Cover - City Palace Udaipur, Pichola Lake, Shri Ekling Ji Temple, Sajjangarh Palace, Sahelion Ki Bari, Fateh Sagar Lake, Ambrai Ghat, Bagore Ki Haveli.</p>
+            <h3 class="tour-button">₹ 7000 / per person</h3><br>
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal-Booking" data-bs-whatever="@getbootstrap" id="BookingBox2">Book Now</button>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 card-box">
+          <img src="images/image_three.jpg" class="card-img-top card-image" alt="Jaisalmer_image">
+          <div class="card card-body">
+            <h5 class="card-title card-heading" id="tourName3">Jaisalmer Tour</h5>
+            <p class="card-text day-night">1 Night/2 Days</p>
+            <p class="card-text card-font">Places We Will Cover - Jaisalmer Fort, Tanot Mata Temple, War Museum, Desert National Park, NightCamp At Desert, Kuldhara Village, Salim Singh ki Haveli, Indo-Pak Border.</p>
+            <h3 class="tour-button">₹ 5000 / per person</h3><br>
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal-Booking" data-bs-whatever="@getbootstrap" id="BookingBox3">Book Now</button>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 card-box">
+          <img src="images/image_four.jpg" class="card-img-top card-image" alt="Ranthambore_image">
+          <div class="card card-body">
+            <h5 class="card-title card-heading" id="tourName4">Ranthambore Tour</h5>
+            <p class="card-text day-night">2 Night/3 Days</p>
+            <p class="card-text card-font">Places We Will Cover - Ranthambore National Park Safari, Ranthambore Fort, Khandar Fort, Soleshwar Mahadev, Jojeshwar Mahadev, Amreshwar Mahadev.</p>
+            <h3 class="tour-button">₹ 9000 / per person</h3><br>
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal-Booking" data-bs-whatever="@getbootstrap" id="BookingBox4">Book Now</button>
+          </div>
+        </div>
+      
+        <div class="col-lg-4 col-md-6 card-box">
+          <img src="images/image_five.jpg" class="card-img-top card-image" alt="Rajasthan_image">
+          <div class="card card-body">
+            <h5 class="card-title card-heading" id="tourName5">Glorius Rajasthan Tour</h5>
+            <p class="card-text day-night">5 Night/6 Days</p>
+            <p class="card-text card-font">Destinations:<br>Jaipur<br>Ajmer & Pushkar<br>Chittorgarh & Udaipur</p>
+            <h3 class="tour-button">₹ 19000 / per person</h3><br>
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal-Booking" data-bs-whatever="@getbootstrap" id="BookingBox5">Book Now</button>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 card-box">
+          <img src="images/image_six.jpg" class="card-img-top card-image" alt="Abu_image">
+          <div class="card card-body">
+            <h5 class="card-title card-heading" id="tourName6">Mount Abu</h5>
+            <p class="card-text day-night">1 Night/2 Days</p>
+            <p class="card-text card-font">Places We Will Cover - Nakki Lake, Guru Shikhar, Toad Rock, Dilwara Temple, Sunset Point, Honeymoon Point, Trevor's Tank, Achalgarh Fort.</p>
+            <h3 class="tour-button">₹ 5000 / per person</h3><br>
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal-Booking" data-bs-whatever="@getbootstrap" id="BookingBox6">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Box -->
+    <div class="modal fade" id="exampleModal-Booking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header booking-titlebox">
+            <h5 class="modal-title booking-title" id="exampleModalLabel">Tour Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" id="Name" autocomplete="off">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-phone" class="col-form-label">Phone no:</label>
+                <input type="tel" class="form-control" id="Contact" autocomplete="off">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-travel-date" class="col-form-label">Travel Date:</label>
+                <input type="date" class="form-control" id="Date">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-persons" class="col-form-label">No. of Persons:</label>
+                <input type="number" class="form-control" id="Quantity">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close" id="BookingButton">Confirm Booking</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <section id="features">
+      <p class="features-heading">HASSLE FREE TRAVEL EXPERIENCE</p>
+      <div class="row features-row">
+        <div class="col-lg-3 col-md-6 feature-box">
+          <img src="images/rupee.png" class="feature-img"><br><br>
+          <p class="feature-heading">BOOK NOW, PAY LATER</p>
+          <p class="feature-content">Reserve your holiday package free now, and get the convenience to pay the remaining amount 30 days before your sailing date.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 feature-box">
+          <img src="images/heritage.png" class="feature-img"><br><br>
+          <p class="feature-heading">HERITAGE HOTELS</p>
+          <p class="feature-content">We provide Stay in the best heritage hotels, steeped with history to meet up the erstwhile glory of the royal era in India.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 feature-box">
+          <img src="images/options.png" class="feature-img"><br><br>
+          <p class="feature-heading">MULTIPLE OPTIONS</p>
+          <p class="feature-content">No need to surf Multiple Sites for Rajasthan package, travel plans. Compare, Negotiate & Choose the best Rajasthan Package.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 feature-box">
+          <img src="images/clients.png" class="feature-img"><br><br>
+          <p class="feature-heading">SATISFIED CLIENTS</p>
+          <p class="feature-content">We define our success is the result of our satisfied clients who enjoy the quality service and count on us for all their travel needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact Page-->
+    <section id="contact">
+        <div class="row foot-row">
+            <div class="col-lg-4 foot-column">
+              <img src="images/foot_logo.png" class="foot-img">
+              <p class="foot-font">Our services assure safety, comfort, and reliability to every customer.</p>
+            </div>
+            <div class="col-lg-4 foot-column">
+              <p class="foot-heading">Contact Details:</p>
+              <div class="foot-content">12345678</div>
+              <div class="foot-content">abc@gmail.com</div><br>
+            </div>
+            <div class="col-lg-4 foot-column">
+              <p class="foot-heading">Address:</p>
+              <p class="foot-font">Jaipur </p>
+            </div>
+        </div><br><br>
+        
+        <div class="site-box">
+          <a href="https://www.instagram.com/rizul_vaidya/" target="_blank"><img src="images/instagram.png" class="socialsite-img"></a>
+          <a href="https://wa.me/+919358394101?text=Welcome To Rajasthan Tourism" target="_blank"><img src="images/whatsapp.png" class="socialsite-img"></a>
+          <a href="https://www.facebook.com/rizul.vaidya.9?mibextid=ZbWKwL" target="_blank"><img src="images/facebook.png" class="socialsite-img"></a>
+          <br><br>
+          <hr><br>
+          <p class="copyright">@Copyright - Design and Developed By Gargi, Jagrati and Diya</p>
+        </div>
+        
+    </section> 
+
+    <!-- Script Bootstrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- index.js -->
+    <script src="js/index.js" charset="UTF-8"></script>
+</body>
+</html>
