@@ -1,0 +1,207 @@
+
+/* Nav Bar */
+.logo{
+    margin-left: 1%;
+    width: 70px;
+    height: 70px;
+}
+.heading{
+    margin-left: 2%;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+.top-button{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/*Carousel Images*/
+.caraousel-image{
+    height: 500px;
+    width: 100%;
+}
+div > h5{
+    font-size: 4rem;
+}
+div > p{
+    font-size: 1.5rem;
+}
+
+/*Sign In*/
+.signin-title{
+    font-size: 2rem;
+    color: rgb(214, 199, 199);
+}
+/*Booking*/
+.booking-title{
+    font-size: 2rem;
+    color: rgb(214, 199, 199);
+}
+.booking-titlebox{
+    background-color: rgb(113, 110, 110);
+}
+
+/*Tour Packages*/
+#packages{
+    background-color: #524A4E;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.heading-packages{
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(173, 165, 165);
+    padding-top: 2%;
+}
+.card-box{
+    margin-bottom: 6%;
+}
+.card-heading{
+    font-size: 2.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.day-night{
+    color: rgb(45, 32, 222);
+    font-size: 1.3rem;
+}
+.card-font{
+    font-size: 1.3rem;
+}
+.tour-button{
+    color: rgb(171, 0, 0);
+}
+
+/*Features*/
+#features{
+    background-color: #DFDFDE;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.features-heading{
+    text-align: center;
+    font-size: 3rem;
+    padding: 3%;
+    font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+    color: #333C83;
+}
+.features-row{
+    padding-bottom: 3%;
+}
+.feature-img{
+    width: 15%;
+}
+.feature-box{
+    text-align: center;
+}
+.feature-heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.feature-content{
+    font-size: 1rem;
+}
+
+
+/*Footer*/
+#contact{
+    background-color: #406882;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 4%;
+}
+.foot-img{
+    width: 20%;
+}
+.foot-row{
+    text-align: center;
+}
+.foot-font{
+    color: rgb(234, 227, 227);
+    font-size: 1.3rem;
+    text-align: center;
+}
+.foot-heading{
+    font-size: 2.0rem;
+    color: #FF616D;
+    font-family: cursive;
+}
+.foot-content{
+    color: rgb(234, 227, 227);
+    font-size: 1.3rem;
+}
+.socialsite-img{
+    width: 50px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+.site-box{
+    text-align: center;
+}
+.copyright{
+    color: #000;
+    font-size: 1.3rem;
+}
+
+/* Media Queries */
+@media (max-width: 501px) {
+    .logo{
+        margin-left: 1%;
+        width: 50px;
+        height: 50px;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+    div > h5{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 401px) {
+    .logo{
+        margin-left: 1%;
+        width: 12%;
+        height: 12%;
+    }
+    .heading{
+        font-size: 5vw;
+    }
+    .heading-packages{
+        font-size: 0.5rem;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(173, 165, 165);
+        padding:2%;
+    }
+    .card-heading{
+        font-size: 2.0rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .caraousel-image{
+        height: 100%;
+        width: 100%;
+    }
+    div > h5{
+        font-size: 1.4rem;
+    }
+    div > p{
+        font-size: 1rem;
+    }
+    .heading-packages{
+        font-size: 10vw;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(173, 165, 165);
+        padding:2%;
+    }
+    .copyright{
+        color: #000;
+        font-size: 2.5vw;
+    }
+}
